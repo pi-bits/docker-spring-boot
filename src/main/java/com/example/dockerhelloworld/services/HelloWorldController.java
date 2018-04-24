@@ -12,8 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api")
 public class HelloWorldController {
 
-    @GetMapping(path="hello", produces= MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> sayHello(){
+    @GetMapping(path = "hello", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> sayHello() {
+
         return new ResponseEntity("{ 'message' : 'Hello World'}", HttpStatus.OK);
     }
+
 }
