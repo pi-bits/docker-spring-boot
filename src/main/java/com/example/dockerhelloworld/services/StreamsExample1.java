@@ -43,6 +43,10 @@ Arrays.stream(names)
         .map(x->x.toLowerCase())
         .filter(x->x.startsWith("a"))
         .forEach(System.out::println);
-
+        Arrays.stream(names).
+                reduce((acc,name)-> acc + "\t" + name)
+                .ifPresent(System.out::println);
     }
+
+
 }
