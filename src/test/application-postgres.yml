@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url:  'jdbc:postgresql://localhost:5432/prashantnaik?currentSchema=FURTHER_ADVANCE'
+    username: prashantnaik
+    password: password
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
