@@ -11,4 +11,9 @@ CREATE TABLE FURTHER_ADVANCE.APP_ID (
 	CASE_ID         INT              NOT NULL,
 	ACCOUNT_NUMBER  INT              NOT NULL
 );
+CREATE TABLE FURTHER_ADVANCE.user_test (
+    ID              INT PRIMARY KEY  NOT NULL,
+	test         VARCHAR              NOT NULL,
+	INFO            JSON              NOT NULL
+);
 ALTER TABLE FURTHER_ADVANCE.APP_ID ALTER COLUMN ID SET DEFAULT nextval('app_id_seq');

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Security">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UsernameToken">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Username" type="xs:string" />
+              <xs:element name="Password" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="role" type="xs:string" use="required" />
+      <xs:attribute name="actor" type="xs:string" use="required" />
+      <xs:attribute name="mustUnderstand" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

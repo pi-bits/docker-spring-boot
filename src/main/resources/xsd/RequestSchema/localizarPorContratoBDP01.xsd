@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://new.webservice.namespace" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://new.webservice.namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="datosInLocalizar.xsd" />
+  <xs:element name="localizarPorContratoBDP01">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="datosInLocalizar" />
+        <xs:element ref="canal" />
+      </xs:sequence>
+      <xs:attribute name="facade" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
